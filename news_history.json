@@ -1,0 +1,89 @@
+[
+  {
+    "ts": "2025-11-23T12:37:42",
+    "admin": "Найт Мегатрон",
+    "admin_ds": "night_megatron",
+    "action": "pin_toggle",
+    "news_id": 1763848592,
+    "before": {
+      "id": 1763848592,
+      "title": "Update 1.1",
+      "date": "2025-11-22",
+      "text": "На сайт додана можливість завантажувати новини адміністрацією",
+      "important": true,
+      "status": "published",
+      "pinned": false,
+      "author": "unknown",
+      "author_ds": "unknown"
+    },
+    "after": {
+      "id": 1763848592,
+      "title": "Update 1.1",
+      "date": "2025-11-22",
+      "text": "На сайт додана можливість завантажувати новини адміністрацією",
+      "important": true,
+      "status": "published",
+      "pinned": true,
+      "author": "unknown",
+      "author_ds": "unknown"
+    }
+  },
+  {
+    "ts": "2025-11-23T12:37:46",
+    "admin": "Найт Мегатрон",
+    "admin_ds": "night_megatron",
+    "action": "pin_toggle",
+    "news_id": 1763848592,
+    "before": {
+      "id": 1763848592,
+      "title": "Update 1.1",
+      "date": "2025-11-22",
+      "text": "На сайт додана можливість завантажувати новини адміністрацією",
+      "important": true,
+      "status": "published",
+      "pinned": true,
+      "author": "unknown",
+      "author_ds": "unknown"
+    },
+    "after": {
+      "id": 1763848592,
+      "title": "Update 1.1",
+      "date": "2025-11-22",
+      "text": "На сайт додана можливість завантажувати новини адміністрацією",
+      "important": true,
+      "status": "published",
+      "pinned": false,
+      "author": "unknown",
+      "author_ds": "unknown"
+    }
+  },
+  {
+    "ts": "2025-11-23T12:37:49",
+    "admin": "Найт Мегатрон",
+    "admin_ds": "night_megatron",
+    "action": "pin_toggle",
+    "news_id": 1763848592,
+    "before": {
+      "id": 1763848592,
+      "title": "Update 1.1",
+      "date": "2025-11-22",
+      "text": "На сайт додана можливість завантажувати новини адміністрацією",
+      "important": true,
+      "status": "published",
+      "pinned": false,
+      "author": "unknown",
+      "author_ds": "unknown"
+    },
+    "after": {
+      "id": 1763848592,
+      "title": "Update 1.1",
+      "date": "2025-11-22",
+      "text": "На сайт додана можливість завантажувати новини адміністрацією",
+      "important": true,
+      "status": "published",
+      "pinned": true,
+      "author": "unknown",
+      "author_ds": "unknown"
+    }
+  }
+]

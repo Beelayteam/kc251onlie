@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КС-251 — Zoom уроки</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+
+  <h1>КС-251 — Zoom уроки</h1>
+  <!-- Кнопка смены тем -->
+  <button class="theme-toggle-btn" title="Переключить тему">🌙</button>
+  <!-- Пошук уроків (завжди видиний) -->
+  <div class="search-container">
+    <input type="text" id="search" placeholder="🔍 Пошук уроку..." autocomplete="off" />
+  </div>
+  <!-- Нав -->
+  <nav class="nav">
+    <button class="nav-btn active" data-page="lessons">Уроки</button>
+    <button class="nav-btn" data-page="memo">Пам'ятка чергового</button>
+    <button class="nav-btn" data-page="shpora">Шпори</button>
+    <button class="nav-btn" data-page="comments">Коментарі</button>
+    <button class="nav-btn" data-page="news">Новини</button>
+  </nav>
+
+  <!-- Оверлей для блокування - УДАЛЕН -->
+
+
+  <!-- Страница: уроки -->
+  <main id="page-lessons" class="page active">
+    <div class="grid" id="lessons-grid"></div>
+  </main>
+
+  <!-- Страница: пам’ятка -->
+  <main id="page-memo" class="page">
+    <div class="info-container">
+      <div class="memo-card">
+        <div class="info-badge">Пам’ятка чергового</div>
+        <div class="info-title">Як доповідати на захисту Вітчизни</div>
+        <div class="info-text">
+          <strong>Команда:</strong> «Встати»<br />
+          <strong>Команда:</strong> «Струнко»<br />
+          <strong>Звернення:</strong> ПАН підполковник!<br /><br />
+
+          <strong>Текст доповіді:</strong><br />
+          Група КС-251.<br />
+          В списку стільки-то, в наявності стільки-то.<br />
+          Доповідав черговий групи Прізвище Ім'я.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Страница: шпори -->
+  <main id="page-shpora" class="page">
+    <div class="info-container shpora-container">
+
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Квадратні рівняння</div>
+        <div class="info-text">
+          <strong>Загальний вигляд:</strong> ax² + bx + c = 0, a ≠ 0<br /><br />
+          <strong>Дискримінант:</strong> D = b² − 4ac<br />
+          <strong>Корені:</strong><br />
+          x₁ = (−b + √D) / 2a<br />
+          x₂ = (−b − √D) / 2a<br /><br />
+          Якщо D &gt; 0 — 2 корені,<br />
+          D = 0 — 1 корінь,<br />
+          D &lt; 0 — дійсних коренів немає.
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Формули Вієта</div>
+        <div class="info-text">
+          Для рівняння ax² + bx + c = 0 (a ≠ 0), корені x₁, x₂:<br /><br />
+          <strong>Сума коренів:</strong> x₁ + x₂ = −b / a<br />
+          <strong>Добуток коренів:</strong> x₁ · x₂ = c / a<br /><br />
+          Якщо a = 1 (x² + px + q = 0):<br />
+          x₁ + x₂ = −p,<br />
+          x₁ · x₂ = q.
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Тригонометрія</div>
+        <div class="info-text">
+          <strong>Основні означення:</strong><br />
+          sin α = протилежний катет / гіпотенуза<br />
+          cos α = прилеглий катет / гіпотенуза<br />
+          tg α = протилежний / прилеглий<br />
+          ctg α = прилеглий / протилежний<br /><br />
+          <strong>Тотожності:</strong><br />
+          sin²α + cos²α = 1<br />
+          1 + tg²α = 1 / cos²α<br />
+          1 + ctg²α = 1 / sin²α
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Геометрія</div>
+        <div class="info-text">
+          <strong>Піфагор:</strong> a² + b² = c²<br /><br />
+          <strong>Площа:</strong><br />
+          прямокутника S = a·b<br />
+          трикутника S = (a·h)/2<br />
+          круга S = πr²<br />
+          кола L = 2πr
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Фізика</div>
+        <div class="info-title">Основні позначення</div>
+        <div class="info-text">
+          t — час (с)<br />
+          s — шлях (м)<br />
+          v — швидкість (м/с)<br />
+          a — прискорення (м/с²)<br />
+          F — сила (Н)<br />
+          m — маса (кг)
+        </div>
+      </div>
+
+      <!-- додаткові шпори (як були у тебе) -->
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Лінійні рівняння та нерівності</div>
+        <div class="info-text">
+          <strong>Рівняння:</strong> ax + b = 0 (a ≠ 0) ⇒ x = −b/a.<br /><br />
+          <strong>Нерівності:</strong><br />
+          якщо множиш / ділиш на від’ємне число — знак міняється.<br />
+          (−)·( &gt; ) ⇒ ( &lt; )
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Система 2 лінійних (Крамер)</div>
+        <div class="info-text">
+          a₁x + b₁y = c₁<br />
+          a₂x + b₂y = c₂<br /><br />
+          Δ = a₁b₂ − a₂b₁<br />
+          x = (c₁b₂ − c₂b₁) / Δ<br />
+          y = (a₁c₂ − a₂c₁) / Δ
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Степені, корені, модуль</div>
+        <div class="info-text">
+          aᵐ·aⁿ = aᵐ⁺ⁿ<br />
+          aᵐ / aⁿ = aᵐ⁻ⁿ<br />
+          (aᵐ)ⁿ = aᵐⁿ<br />
+          √(a²) = |a|<br /><br />
+          |a| = a, якщо a ≥ 0; |a| = −a, якщо a &lt; 0
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-бadge">Математика</div>
+        <div class="info-title">Прогресії</div>
+        <div class="info-text">
+          <strong>Арифметична:</strong><br />
+          aₙ = a₁ + (n−1)d<br />
+          Sₙ = (a₁ + aₙ)·n / 2<br /><br />
+          <strong>Геометрична:</strong><br />
+          bₙ = b₁·qⁿ⁻¹<br />
+          Sₙ = b₁( qⁿ − 1 ) / (q − 1), q ≠ 1
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Математика</div>
+        <div class="info-title">Логарифми</div>
+        <div class="info-text">
+          logₐb = c ⇔ aᶜ = b (a&gt;0, a≠1, b&gt;0).<br /><br />
+          logₐ(xy) = logₐx + logₐy<br />
+          logₐ(x/y) = logₐx − logₐy<br />
+          logₐ(xᵏ) = k·logₐx<br />
+          logₐb = logᶜb / logᶜa
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Тригонометрія</div>
+        <div class="info-title">Табличні значення</div>
+        <div class="info-text">
+          <strong>Кути:</strong> 0° | 30° | 45° | 60° | 90°<br />
+          sin: 0 | 1/2 | √2/2 | √3/2 | 1<br />
+          cos: 1 | √3/2 | √2/2 | 1/2 | 0<br />
+          tg: 0 | 1/√3 | 1 | √3 | —<br />
+          ctg: — | √3 | 1 | 1/√3 | 0
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Тригонометрія</div>
+        <div class="info-title">Додавання / віднімання</div>
+        <div class="info-text">
+          sin(α ± β) = sinα·cosβ ± cosα·sinβ<br />
+          cos(α ± β) = cosα·cosβ ∓ sinα·sinβ<br />
+          tg(α ± β) = (tgα ± tgβ) / (1 ∓ tgα·tgβ)<br />
+          ctg(α ± β) = (ctgα·ctgβ ∓ 1) / (ctgβ ± ctgα)
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Тригонометрія</div>
+        <div class="info-title">Подвійний кут</div>
+        <div class="info-text">
+          sin2α = 2sinα·cosα<br />
+          cos2α = cos²α − sin²α = 1 − 2sin²α = 2cos²α − 1<br />
+          tg2α = 2tgα / (1 − tg²α)<br />
+          ctg2α = (ctg²α − 1) / (2ctgα)
+        </div>
+      </div>
+
+      <div class="memo-card">
+        <div class="info-badge">Тригонометрія</div>
+        <div class="info-title">Зведення + парність</div>
+        <div class="info-text">
+          sin(−α) = −sinα (непарна)<br />
+          cos(−α) = cosα (парна)<br />
+          tg(−α) = −tgα, ctg(−α) = −ctgα<br /><br />
+          sin(90°−α)=cosα, cos(90°−α)=sinα<br />
+          tg(90°−α)=ctgα, ctg(90°−α)=tgα
+        </div>
+      </div>
+    </div>
+
+    <div class="easter-egg">
+      <img src="https://i.postimg.cc/qBFDnTHc/pngegg.png" alt="Пасхалка" />
+    </div>
+  </main>
+
+  <!-- Страница: коментарі -->
+  <main id="page-comments" class="page">
+    <div class="info-container comments-container">
+
+      <div class="memo-card comment-form-card">
+        <div class="info-badge">Коментарі</div>
+        <div class="info-title">Залиш комент</div>
+        <div class="info-text">
+          <form id="comment-form" class="comment-form" autocomplete="off">
+            <input id="comment-name" class="comment-input" type="text" maxlength="32"
+                   placeholder="Твоє ім’я (необов’язково)" />
+            <textarea id="comment-text" class="comment-input" rows="4" maxlength="500" required
+                      placeholder="Пиши сюди..."></textarea>
+
+            <button class="card-button comment-submit" type="submit">Відправити</button>
+            <div id="comment-hint" class="comment-hint"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="comments-head">
+        <div class="comments-count" id="comments-count">0 коментарів</div>
+      </div>
+
+      <div id="comments-list" class="comments-list"></div>
+    </div>
+  </main>
+
+  <!-- Страница: новости -->
+  <main id="page-news" class="page">
+    <div class="info-container">
+      <div class="memo-card" style="margin-bottom:1rem;">
+        <div class="info-badge">НОВИНИ КС-251 / КОЛЕДЖУ</div>
+        <input type="text" id="news-search" class="search-input" placeholder="🔍 Пошук новини..." />
+      </div>
+
+      <div id="news-list"></div>
+    </div>
+  </main>
+
+</body>
+</html>
